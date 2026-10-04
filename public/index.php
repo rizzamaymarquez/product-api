@@ -1,6 +1,6 @@
 <?php
 // CORS
-$allowed_origins = ['http://localhost:5173'];
+$allowed_origins = ['http://localhost:5173', 'https://product-frontend-a3xc.onrender.com'];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed_origins, true)) {
     header("Access-Control-Allow-Origin: $origin");
